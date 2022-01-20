@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "link1": "transfer",
+    "link2": "payment",
+    "link3": "about",
+    "link4": "contact",
+    "link5": "partners",
+    "link6": "services",
+    "link7": "help",
+    "link8": "company",
+    "link9": "news",
+    "link10": "security",
+    "link11": "rates",
+    "link12": "public offer",
+    "link13": "description and capabilities of systems",
+    "link14": "site map",
+    "btn": "Login",
+    "cal": "Call number"
+  },
+  "footer": {
+    "p1": "2018–2022 © National Interbank Processing Center LLC",
+    "contact": "Contact",
+    "address": "100001, Republic of Uzbekistan, Tashkent, st. Islam Karimov, 6",
+    "q1": "Payment system?",
+    "q2": "Why We?",
+    "q3": "Where to get a card?",
+    "info1": "ONLINE NOW:",
+    "info2": "registered - 0,",
+    "info3": "guests - 8",
+    "info4": "LAST UPDATE:",
+    "info5": "19 January 2022, 20:22 (GMT+5)",
+    "dev": "Website design and development"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "link1": "O'tkazma",
+    "link2": "to'lov",
+    "link3": "Biz haqimizda",
+    "link4": "aloqa",
+    "link5": "sheriklar",
+    "link6": "xizmatlar",
+    "link7": "yordam",
+    "link8": "kompaniya",
+    "link9": "yangiliklar",
+    "link10": "xavfsizlik",
+    "link11": "stavkalar",
+    "link12": "ommaviy taklif",
+    "link13": "tizimlarning tavsifi va imkoniyatlari",
+    "link14": "sayt xaritasi",
+    "btn": "Kirish",
+    "cal": "Call markaz"
+  },
+  "footer": {
+    "p1": "2018–2022 © Milliy banklararo protsessing markazi MChJ",
+    "contact": "Aloqa",
+    "address": "100001, O'zbekiston Respublikasi, Toshkent sh., Islom Karimov ko'chasi, 6",
+    "q1": "To'lov tizimi?",
+    "q2": "Nega biz?",
+    "q3": "Kartani qayerdan olish kerak?",
+    "info1": "HOZIR ONLAYN:",
+    "info2": "ro'yxatdan o'tgan - 0,",
+    "info3": "mehmonlar - 8",
+    "info4": "SO'NGI YANGILANISH:",
+    "info5": "2022-yil 19-yanvar, 20:22 (GMT+5)",
+    "dev": "Veb-sayt dizayni va ishlab chiqish"
+  }
+}

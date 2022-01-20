@@ -1,0 +1,113 @@
+@import '../../../Variables.scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0 50px;
+  //background-color: $back1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    max-width: 1140px;
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin: 25px 20px;
+
+
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.25rem;
+
+        h3 {
+          font-size: 22px;
+          font-weight: 400;
+          margin-right: 1rem;
+          color: $text2;
+        }
+
+        p {
+          font-size: 18px;
+          color: $text3;
+          margin-right: 1rem;
+        }
+
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px $text1 solid;
+          border-radius: 5px;
+          padding: 7px 10px;
+          cursor: pointer;
+
+          p {
+            margin: 0;
+            color: $text2;
+          }
+
+          &:hover {
+            border-color: $mainHovertext;
+
+            p {
+              color: $mainHovertext;
+            }
+          }
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 25px 0 0;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 170px;
+          height: 155px;
+          border: 1px solid $text3;
+          border-radius: 10px;
+          transition: all .1s ease;
+          cursor: pointer;
+          padding: 10px;
+
+
+          &:hover {
+            border-color: $mainHovertext;
+            box-shadow: 0 0 5px 5px $mainHovertext;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+
+

@@ -1,0 +1,234 @@
+@import "../../../Variables.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0 0;
+  background-color: $back3;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    color: $text1;
+
+    .question {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 60%;
+      padding: 15px 0;
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: $text1;
+      }
+
+      @media screen and (max-width: 756px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 5px;
+
+        img {
+          width: 190px;
+
+        }
+
+        p {
+          font-weight: 300;
+          line-height: 28px;
+          font-size: 16px;
+          padding-top: 30px;
+          width: 250px;
+        }
+
+      }
+
+      .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+
+
+        h3 {
+          line-height: 28px;
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-bottom: 15px;
+        }
+
+        .pci {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          a {
+            font-weight: 300;
+            line-height: 28px;
+            font-size: 16px;
+            text-decoration: none;
+            color: $text1;
+            text-align: center;
+
+            &:hover {
+              color: $mainHovertext;
+            }
+
+          }
+        }
+
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px 0 0;
+
+          div {
+            svg {
+              margin-right: 15px;
+              display: inline-block;
+              width: 26px;
+              height: 26px;
+            }
+          }
+
+          p {
+            display: table-cell;
+            vertical-align: middle;
+            font-weight: 300;
+            line-height: 28px;
+            font-size: 16px;
+
+          }
+
+          a {
+            color: $mainText;
+            font-size: 16px;
+            transition: all .2s ease;
+            text-decoration: none;
+
+            &:hover {
+              color: $mainHovertext;
+            }
+          }
+
+          &:hover {
+            color: $mainHovertext;
+          }
+        }
+
+        @media screen and (max-width: 1140px) {
+          justify-content: flex-start;
+          img {
+            width: 150px;
+            padding: 25px 0 0;
+          }
+        }
+      }
+
+      @media screen and (max-width: 756px) {
+        flex-direction: column;
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-top: 1px #565656 solid;
+      padding: 20px 0;
+
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .icon {
+
+
+            svg {
+              width: 20px;
+              height: 20px;
+              margin-right: 1px;
+            }
+          }
+
+          .inItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0 15px;
+          }
+        }
+
+        @media screen and (max-width: 756px) {
+          flex-direction: column;
+        }
+      }
+
+      .made {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        P {
+          margin-right: 15px;
+          font-size: 16px;
+          text-align: right;
+        }
+
+        img {
+          width: 130px;
+        }
+
+        @media screen and (max-width: 756px) {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      }
+
+      @media screen and (max-width: 756px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+
+  }
+
+}
+

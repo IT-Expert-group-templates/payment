@@ -1,4 +1,4 @@
-@import '../../Variables.scss';
+@import '../../../Variables.scss';
 
 .main {
   display: flex;
@@ -6,7 +6,10 @@
   justify-content: center;
   align-content: center;
   width: 100%;
-  height: 100%;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  z-index: 100;
+
 
   .container {
     display: flex;
@@ -21,6 +24,9 @@
     }
 
     .logo {
+      img {
+        width: 130px;
+      }
 
     }
 
@@ -86,13 +92,229 @@
 
         .activeBtn {
           color: $text1;
-          background-color: $back1;
+          background-color: $back2;
           transition: all .5s ease;
         }
 
         .btn {
-          color: $text2;
+          color: $text1;
+          //background-color: $back2;
+          background-color: transparent;
+          transition: all .5s ease;
+
+        }
+
+        @media screen and (max-width: 1080px) {
+          margin-right: 10px;
+        }
+      }
+
+      .btnLogin {
+        margin-right: 30px;
+
+        button {
+          width: 70px;
+          padding: 6px 0;
+          color: $text1;
+          background-color: $back1;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            //transform: scale(1.2);
+            background-color: $back3;
+            transition: all .5s ease;
+          }
+        }
+
+        @media screen and (max-width: 1080px) {
+          margin-right: 10px;
+        }
+      }
+
+      .btnMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 8px;
+        background-color: $back2;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+
+        svg {
+          color: $text3;
+          width: 30px;
+          height: 20px;
+        }
+
+        .menuItems {
+          position: absolute;
+          top: 50px;
+          right: 0;
           background-color: $back2;
+          color: $text1;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          border: none;
+          border-radius: 10px;
+          transition: all 1s ease-in-out;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            a {
+              margin-bottom: 10px;
+              text-transform: capitalize;
+              border-bottom: 1px transparent solid;
+
+              &:hover {
+                color: $mainHovertext;
+                border-bottom: 2px $mainHovertext solid;
+              }
+            }
+
+            &:nth-child(2) {
+              border-left: 2px $mainText solid;
+              width: 210px;
+              margin-left: 30px;
+
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+      .a {
+        margin-right: 10px;
+
+      }
+      .number {
+        margin-right: 10px;
+
+      }
+      .btnLang {
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+
+
+.mainScroll {
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #100028;
+  border-bottom: 1px solid #222;
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    max-width: 1440px;
+    padding: 30px 0;
+    @media screen and (max-width: 850px) {
+      width: 90%;
+    }
+
+    .logo {
+      img {
+        width: 130px;
+      }
+
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        color: $mainText;
+        cursor: pointer;
+        transition: all .3s ease;
+        text-transform: capitalize;
+
+        &:hover {
+          color: $mainHovertext;
+          transition: all .3s ease;
+        }
+      }
+
+      .a {
+        margin-right: 40px;
+        @media screen and (max-width: 1080px) {
+          margin-right: 10px;
+        }
+      }
+
+      .number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+
+        p {
+          font-size: 18px;
+          color: $text1;
+        }
+
+        @media screen and (max-width: 1080px) {
+          margin-right: 10px;
+        }
+      }
+
+      .btnLang {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 30px;
+
+        button {
+          border: none;
+          cursor: pointer;
+          text-align: center;
+          width: 40px;
+          padding: 6px 0;
+          margin: 5px;
+          border-radius: 5px;
+        }
+
+        .activeBtn {
+          color: $text1;
+          background-color: $back2;
+          transition: all .5s ease;
+        }
+
+        .btn {
+          color: $text1;
+          //background-color: $back2;
+          background-color: transparent;
           transition: all .5s ease;
 
         }
@@ -200,6 +422,12 @@
     }
   }
 }
+
+
+
+
+
+
 
 
 
